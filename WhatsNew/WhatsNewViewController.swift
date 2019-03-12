@@ -141,6 +141,10 @@ public class WhatsNewViewController: UIViewController {
                 let itemView = WhatsNewItemImageView.loadFromNib()
                 itemView.set(image: image, title: title, subtitle: subtitle, titleColor: itemTitleColor, subtitleColor: itemSubtitleColor, titleFont: itemTitleFont, subtitleFont: itemSubtitleFont)
                 view = itemView
+            case .imageUrl(let title, let subtitle, let imageUrl):
+                let itemView = WhatsNewItemImageView.loadFromNib()
+                itemView.set(imageUrl: imageUrl, title: title, subtitle: subtitle, titleColor: itemTitleColor, subtitleColor: itemSubtitleColor, titleFont: itemTitleFont, subtitleFont: itemSubtitleFont)
+                view = itemView
             case .text(let title, let subtitle):
                 let itemView = WhatsNewItemTextView.loadFromNib()
                 itemView.set(title: title, subtitle: subtitle, titleColor: itemTitleColor, subtitleColor: itemSubtitleColor, titleFont: itemTitleFont, subtitleFont: itemSubtitleFont)
