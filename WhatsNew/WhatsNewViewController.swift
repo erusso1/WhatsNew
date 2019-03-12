@@ -152,6 +152,9 @@ public class WhatsNewViewController: UIViewController {
                 view = itemView
             case .imageUrl(let title, let subtitle, let imageUrl):
                 let itemView = WhatsNewItemImageView.loadFromNib()
+                if let imageTintColor = itemImageTintColor {
+                    itemView.imageView.tintColor = imageTintColor
+                }
                 itemView.set(imageUrl: imageUrl, title: title, subtitle: subtitle, titleColor: itemTitleColor, subtitleColor: itemSubtitleColor, titleFont: itemTitleFont, subtitleFont: itemSubtitleFont)
                 view = itemView
             case .text(let title, let subtitle):
