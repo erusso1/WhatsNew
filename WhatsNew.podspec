@@ -20,7 +20,7 @@ Simply list your new features (with optional icons), customize the appeareance a
   s.source           = { :git => 'https://github.com/BalestraPatrick/WhatsNew.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/BalestraPatrick'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'WhatsNew/**/*.swift'
   s.resources = 'WhatsNew/Resources/*.*'
