@@ -20,7 +20,9 @@ class ViewController: UIViewController {
                 WhatsNewItem.image(title: "Such Easy", subtitle: "Setting this up only takes 2 lines of code, impressive you say?", image: #imageLiteral(resourceName: "threed")),
                 WhatsNewItem.image(title: "Very Sleep", subtitle: "It helps you get more sleep by writing less code.", image: #imageLiteral(resourceName: "night")),
                 WhatsNewItem.text(title: "Text Only", subtitle: "No icons? Just go with plain text."),
+                WhatsNewItem.imageUrl(title: "Image URL", subtitle: "Image hosted on web? Use image ULR. Powered by Nuke.", imageUrl: URL(string: "https://openclipart.org/image/800px/svg_to_png/26519/JoelM-biodegradable.png")!)
                 ])
+            whatsNew.itemImageTintColor = .purple
             whatsNew.titleText = "What's New"
             whatsNew.itemSubtitleColor = .darkGray
             whatsNew.buttonText = "Continue"

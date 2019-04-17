@@ -1,16 +1,23 @@
 PODS:
-  - WhatsNew (0.1.0)
+  - Nuke (7.5.2)
+  - WhatsNew (0.5.0):
+    - Nuke
 
 DEPENDENCIES:
   - WhatsNew (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nuke
 
 EXTERNAL SOURCES:
   WhatsNew:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WhatsNew: 84f89c9a2aef83d118c931f631184b12f2c4cf06
+  Nuke: 0350d346a688426e8f2331253ef28dc2fc4f6178
+  WhatsNew: 8e6d269794d94c99eb146786301537d1b886b22a
 
 PODFILE CHECKSUM: f7e23ca212f99a208ef47c6d7ab74bbe03bb82de
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.6.1
